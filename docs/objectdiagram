@@ -1,0 +1,27 @@
+@startuml
+
+    object usuario{
+        usuario : id
+        usuario : nome
+        usuario : documento
+        usuario : idade
+        usuario : email
+        usuario : senha
+        usuario : telefone
+    }
+    
+    object animal{
+        animal : nome
+        animal : cidade
+        animal : raça
+        animal : idade
+        animal : sexo
+        animal : castração
+        animal : bio
+        animal : classificação idade
+        animal : documento
+    }
+
+    usuario "1" --> "0.*" animal
+
+@enduml

@@ -1,0 +1,22 @@
+GET http://127.0.0.1:8000/api/register
+
+###
+POST http://127.0.0.1:8000/api/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email":"misky707@domain.com",
+    "password":"123456789"
+}
+
+###
+POST http://127.0.0.1:8000/api/register
+Accept: application/json
+Content-Type: application/json
+
+    {
+    "name":"misky", 
+    "email":"misky_707@domain.com",
+    "password":"daikogaii"
+    }

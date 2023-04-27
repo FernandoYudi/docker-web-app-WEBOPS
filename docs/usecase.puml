@@ -1,0 +1,35 @@
+/' Atores 
+    saUsuário
+'/
+/' Casos de uso 
+    sucControleDePet - sucRegistraDocumento
+    sucControleDeUsuário
+    sucAdotarPet - Chat especifico para cada card de cão
+    sucDoarPet
+    sucChat
+    sucPesquisaPet - sucFiltrarPesquisa 
+'/
+
+@startuml usecase
+
+  actor Usuario as saUser
+
+package PetPudim{
+
+    usecase "sucControleDePet" as UC1
+    usecase "sucControleDeUsuario" as UC2
+    usecase "sucAdotarPet" as UC3
+    usecase "sucDoarPet" as UC4
+    usecase "sucChat" as UC5
+    usecase "sucPesquisaPet" as UC6
+}
+
+saUser --> UC1
+saUser -> UC2
+saUser -> UC3
+saUser -> UC4
+saUser -> UC5
+saUser -> UC6
+
+@enduml
+
